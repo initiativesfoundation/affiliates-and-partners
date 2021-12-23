@@ -149,9 +149,9 @@
 				form.addEventListener('submit', e => {
 				  e.preventDefault()
 				  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-				  .then(response => alert("Ifon Says: Hmm I see, You are brave enough to apply. Ok Then, Your Application is Submitted"))
+				  .then(response => alert("Ifon Says: Hmm I see, You are brave enough to apply. Ok Then, Your Application is Submitted"), 	window.location.href="https://affiliates-and-partners.web.app/index1.html")
 					.catch(error => console.error('Error!', error.message))
-					window.location.href="https://affiliates-and-partners.web.app/index1.html"
+				
 				})
 			  </script>
 	
